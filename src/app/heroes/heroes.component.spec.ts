@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 describe('HeroesComponent', () => {
   let component: HeroesComponent; // Angular component
   let fixture: ComponentFixture<HeroesComponent>; // API para testear componente
-  let element: fixture.nativeElement; // DOM Element
+  //let element: fixture.nativeElement; // DOM Element
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -16,9 +16,9 @@ describe('HeroesComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeroesComponent);
-    component = fixture.componentInstance;
-    element = fixture.nativeElement;
+    let fixture = TestBed.createComponent(HeroesComponent);
+    let component = fixture.componentInstance;
+    let element = fixture.nativeElement;
   });
 
   it('should create', () => {
